@@ -1,4 +1,4 @@
-import '/DataLayer/Models/OrderModels/chatMessages.dart';
+import 'package:pietyservices/Models/OrderModels/chatMessages.dart';
 
 class Chats {
   bool? didStoreRead;

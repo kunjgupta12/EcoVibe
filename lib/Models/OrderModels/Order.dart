@@ -2,19 +2,19 @@ import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '/DataLayer/Models/OrderModels/Item.dart';
-import '/DataLayer/Models/StoreModels/Offer.dart';
-import '../../../DataLayer/Models/OrderModels/Activity.dart';
-import '../../../DataLayer/Models/OrderModels/Payment.dart';
-import '../../../DataLayer/Models/OrderModels/Price.dart';
-import '../../../DataLayer/Models/OrderModels/Review.dart';
-import '../../../DataLayer/Models/Other/EnumToString.dart';
-import '../../../DataLayer/Models/Other/Enums.dart';
-import '../../../DataLayer/Models/Other/LatLngExtended.dart';
-import '../../../DataLayer/Models/Other/StringToEnum.dart';
-import '../../../DataLayer/Models/StoreModels/StoreAddress.dart';
-import '../../../DataLayer/Models/UserModels/PhoneNumber.dart';
-import '../../../DataLayer/Models/UserModels/UserAddress.dart';
+import '/Models/OrderModels/Item.dart';
+import '/Models/StoreModels/Offer.dart';
+import '../../../Models/OrderModels/Activity.dart';
+import '../../../Models/OrderModels/Payment.dart';
+import '../../../Models/OrderModels/Price.dart';
+import '../.././Models/OrderModels/Review.dart';
+import '../../../Models/Other/EnumToString.dart';
+import '../../../Models/Other/Enums.dart';
+import '../../../Models/Other/LatLngExtended.dart';
+import '../../../Models/Other/StringToEnum.dart';
+import '../../../Models/StoreModels/StoreAddress.dart';
+import '../.././Models/UserModels/PhoneNumber.dart';
+import '../../../Models/UserModels/UserAddress.dart';
 import 'chats.dart';
 
 class Order {

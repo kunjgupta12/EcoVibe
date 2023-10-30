@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '/DataLayer/Models/OrderModels/Review.dart';
+import '/Models/OrderModels/Review.dart';
 
 class StoreReviewList {
   String? userName;

@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 
-import '../../../DataLayer/Models/StoreModels/Offer.dart';
+import '../../../Models/StoreModels/Offer.dart';
 
 class Price {
   /// The service wise charge for order items

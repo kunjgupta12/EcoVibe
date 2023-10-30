@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-import '../DataLayer/Models/UserModels/User.dart';
-import '../DataLayer/Models/UserModels/UserAddress.dart';
+import 'package:pietyservices/Models/UserModels/User.dart';
+import 'package:pietyservices/Models/UserModels/UserAddress.dart';
 
 abstract class UserEvent extends Equatable {
   const UserEvent();
@@ -87,7 +87,7 @@ class UpdatePhoneNumber extends UserEvent {
   final String phoneNumber;
   final String countryCode;
 
-  UpdatePhoneNumber({
+  const UpdatePhoneNumber({
     required this.phoneNumber,
     this.countryCode = "+91",
   });

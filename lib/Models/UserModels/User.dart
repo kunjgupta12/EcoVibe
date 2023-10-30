@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
-import '../../../DataLayer/Models/Other/Enums.dart';
-import '../../../DataLayer/Models/UserModels/PhoneNumber.dart';
-import '../../../DataLayer/Models/UserModels/UserAddress.dart';
+import '../../../Models/Other/Enums.dart';
+import '../../../Models/UserModels/PhoneNumber.dart';
+import '../../../Models/UserModels/UserAddress.dart';
 
 class User2 {
   String? uid;

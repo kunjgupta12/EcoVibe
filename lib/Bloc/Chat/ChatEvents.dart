@@ -1,4 +1,4 @@
-import '/DataLayer/Models/OrderModels/chatMessages.dart';
+import '/Models/OrderModels/chatMessages.dart';
 
 abstract class ChatEvents {}
 

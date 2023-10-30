@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 
-import '../../../DataLayer/Models/Other/EnumToString.dart';
-import '../../../DataLayer/Models/Other/Enums.dart';
-import '../../../DataLayer/Models/Other/StringToEnum.dart';
+import '../../../Models/Other/EnumToString.dart';
+import '../../../Models/Other/Enums.dart';
+import '../../../Models/Other/StringToEnum.dart';
 
 class Payment {
   PaymentStatus? paymentStatus;

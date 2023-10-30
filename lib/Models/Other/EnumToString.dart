@@ -1,4 +1,4 @@
-import '/DataLayer/Models/Other/Enums.dart';
+import '/Models/Other/Enums.dart';
 
 /// This class contains static methods for
 /// converting enums to string because they are pushed

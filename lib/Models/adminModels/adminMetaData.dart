@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '/DataLayer/Models/adminModels/faq.dart';
-import '/DataLayer/Models/adminModels/reward.dart';
-import '/DataLayer/Models/adminModels/socialLinkAdmin.dart';
+import 'package:pietyservices/Models/adminModels/faq.dart';
+import 'package:pietyservices/Models/adminModels/reward.dart';
+import 'package:pietyservices/Models/adminModels/socialLinkAdmin.dart';
 
 class AdminMetaData {
   /// Boolean to determine how to calculate order discount.

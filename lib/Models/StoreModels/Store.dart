@@ -1,12 +1,12 @@
 import 'package:flutter/foundation.dart';
 
-import '/DataLayer/Models/Other/EnumToString.dart';
+import '/Models/Other/EnumToString.dart';
 import './StoreAddress.dart';
-import '../../../DataLayer/Models/Other/Enums.dart';
-import '../../../DataLayer/Models/Other/LatLngExtended.dart';
-import '../../../DataLayer/Models/Other/StoreTime.dart';
-import '../../../DataLayer/Models/StoreModels/Offer.dart';
-import '../../../DataLayer/Models/UserModels/PhoneNumber.dart';
+import '../../../Models/Other/Enums.dart';
+import '../../../Models/Other/LatLngExtended.dart';
+import '../../../Models/Other/StoreTime.dart';
+import '../../../Models/StoreModels/Offer.dart';
+import '../../../Models/UserModels/PhoneNumber.dart';
 
 class Store {
   String? name;
