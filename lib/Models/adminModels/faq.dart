@@ -1,6 +1,6 @@
 class FAQ {
   String? answer;
-  String? question;
+  late String question;
 
   FAQ.fromMap(Map<String, dynamic> map) {
     this.answer = map["answer"];

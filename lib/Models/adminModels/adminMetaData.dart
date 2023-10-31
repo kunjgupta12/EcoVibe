@@ -13,9 +13,9 @@ class AdminMetaData {
   bool? discountOnOrderOnly;
 
   /// The API key to be used for all razor pay operations
-  String? razorAPIKey;
-  double? razorPayFees;
-  double? razorPayTax;
+  late String razorAPIKey;
+  late double razorPayFees;
+  late double razorPayTax;
 
   /// T&C and legal aggreement links
   String? tc;

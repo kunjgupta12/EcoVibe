@@ -6,7 +6,7 @@ import '../../../Models/UserModels/PhoneNumber.dart';
 import '../../../Models/UserModels/UserAddress.dart';
 
 class User2 {
-  String? uid;
+  late String uid;
   String? name;
   String? fcmToken;
   List<PhoneNumber>? phoneNumbers;

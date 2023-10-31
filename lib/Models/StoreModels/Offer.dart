@@ -3,8 +3,8 @@ import 'package:flutter/foundation.dart';
 class Offer {
   String? offerCode;
   String? description;
-  double? minAmount;
-  double? maxDiscount;
+  late double minAmount;
+  late double maxDiscount;
   double? offer;
   bool? isActive;
 

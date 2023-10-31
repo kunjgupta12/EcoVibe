@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 
 class Activity {
-  String? activity;
+  late String activity;
   String? additionalMessage;
-  DateTime? timeStamp;
+  late DateTime timeStamp;
 
   Activity({
     required this.activity,

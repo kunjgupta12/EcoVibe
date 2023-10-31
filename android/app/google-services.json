@@ -1,34 +1,562 @@
 {
   "project_info": {
-    "project_number": "1013750871131",
-    "project_id": "serenity-a621b",
-    "storage_bucket": "serenity-a621b.appspot.com"
+    "project_number": "282805273447",
+    "firebase_url": "https://mypiety-9a56c.firebaseio.com",
+    "project_id": "mypiety-9a56c",
+    "storage_bucket": "mypiety-9a56c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1013750871131:android:eec16d80fde1928007bb7e",
+        "mobilesdk_app_id": "1:282805273447:android:8e4aab90a3be5f7115e5c2",
         "android_client_info": {
-          "package_name": "com.example.pietyservices"
+          "package_name": "com.example.piety_customer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1013750871131-9ausc5o09aqpj3377o24q6238eajkhri.apps.googleusercontent.com",
+          "client_id": "282805273447-fcmgtpdfellp34dhpu1i03mmbk21cj6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.piety_customer",
+            "certificate_hash": "a27759cfab796bdd62fa98f27bb9188234f189be"
+          }
+        },
+        {
+          "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDXAgtwWLfErJgdJv-g10Ew3i-kuCAOOA0"
+          "current_key": "AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1013750871131-9ausc5o09aqpj3377o24q6238eajkhri.apps.googleusercontent.com",
+              "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "282805273447-03nc73mpp49f0j4i8b8tmgrqeah90chn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pietycustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282805273447:android:05822cefed2b1d0c15e5c2",
+        "android_client_info": {
+          "package_name": "com.example.piety_customer_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "282805273447-03nc73mpp49f0j4i8b8tmgrqeah90chn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pietycustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282805273447:android:c1f5af6f0d75b8e315e5c2",
+        "android_client_info": {
+          "package_name": "com.example.pietycustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282805273447-0uoocso3vrh06b2hh3g8a9n501p2qki3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pietycustomer",
+            "certificate_hash": "a27759cfab796bdd62fa98f27bb9188234f189be"
+          }
+        },
+        {
+          "client_id": "282805273447-cef1gmk245j9v1v2nit564hao1j00rof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pietycustomer",
+            "certificate_hash": "36e5fca9ea5c0e6090c5e23ab42df0e223882a4d"
+          }
+        },
+        {
+          "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "282805273447-03nc73mpp49f0j4i8b8tmgrqeah90chn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pietycustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282805273447:android:29aaa9218dabe3e415e5c2",
+        "android_client_info": {
+          "package_name": "com.example.pietycustomerapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "282805273447-03nc73mpp49f0j4i8b8tmgrqeah90chn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pietycustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282805273447:android:aa26b419c63628fb15e5c2",
+        "android_client_info": {
+          "package_name": "com.example.pietyservices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "282805273447-03nc73mpp49f0j4i8b8tmgrqeah90chn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pietycustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282805273447:android:99f63306dbb14f3f15e5c2",
+        "android_client_info": {
+          "package_name": "com.example.pietystore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282805273447-c0mq17vl10fp2vk443j3gdjjkg7qjcdm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pietystore",
+            "certificate_hash": "ed2bd84ccac6393fc96911a76c48b3d94c87e128"
+          }
+        },
+        {
+          "client_id": "282805273447-q573si569natva55tnhtg70kkodogsr6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pietystore",
+            "certificate_hash": "d9dc9d1a6005559a9d800c7b8e91840f75624241"
+          }
+        },
+        {
+          "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "282805273447-03nc73mpp49f0j4i8b8tmgrqeah90chn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pietycustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282805273447:android:548a4e58a0d5decf",
+        "android_client_info": {
+          "package_name": "com.piety.imanage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282805273447-kqpv2q9pfrgramnh8d1oij6pmo016bhu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.imanage",
+            "certificate_hash": "9f8a01460fa1d7dc84c5e118cebe4a8935f018a1"
+          }
+        },
+        {
+          "client_id": "282805273447-qsumd4n23oo1rgt53m9o29q20ki3osgm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.imanage",
+            "certificate_hash": "25ed8aab342338f21d436b9ef65ebbd3ec0ad2a0"
+          }
+        },
+        {
+          "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "282805273447-03nc73mpp49f0j4i8b8tmgrqeah90chn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pietycustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282805273447:android:8253d6263231872a",
+        "android_client_info": {
+          "package_name": "com.piety.piety"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282805273447-0ga4cpubi715habgr6jpmndaedt39uea.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.piety",
+            "certificate_hash": "d9dc9d1a6005559a9d800c7b8e91840f75624241"
+          }
+        },
+        {
+          "client_id": "282805273447-7j8m22sq5d77hos1ps2sd4m0r12ofds4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.piety",
+            "certificate_hash": "896717b36288d17cee166038eb728e863651e4b8"
+          }
+        },
+        {
+          "client_id": "282805273447-fg44d4jk0kkt9jd693i4jv4o3gmrg4ui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.piety",
+            "certificate_hash": "25ed8aab342338f21d436b9ef65ebbd3ec0ad2a0"
+          }
+        },
+        {
+          "client_id": "282805273447-gajkaahon2fp9mrnchh2fjfs6eij3sv9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.piety",
+            "certificate_hash": "03458753ac6f3585a07e36d6f944b2db754c7b06"
+          }
+        },
+        {
+          "client_id": "282805273447-of8hr7a4n063s8t1o41t9b83makguqte.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.piety",
+            "certificate_hash": "5a00d73fcd9a2d9cf05adf595d40ecef1a5b4bcd"
+          }
+        },
+        {
+          "client_id": "282805273447-pgqjulp0jij45lum7dm2cibdcf3sfsfj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.piety",
+            "certificate_hash": "ad1356ef08664c361d340d2da242d43dcad3902e"
+          }
+        },
+        {
+          "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "282805273447-03nc73mpp49f0j4i8b8tmgrqeah90chn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pietycustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282805273447:android:c9718fa7b4451f8d15e5c2",
+        "android_client_info": {
+          "package_name": "com.piety.piety_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282805273447-oceo8qet8brvagtlvuiree78297bcfcm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.piety_admin",
+            "certificate_hash": "d9dc9d1a6005559a9d800c7b8e91840f75624241"
+          }
+        },
+        {
+          "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "282805273447-03nc73mpp49f0j4i8b8tmgrqeah90chn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pietycustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282805273447:android:fee6f211be99d105",
+        "android_client_info": {
+          "package_name": "com.piety.pietydelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282805273447-03ijur9nirat8ikmchcqfsjqkrv6inkm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.pietydelivery",
+            "certificate_hash": "25ed8aab342338f21d436b9ef65ebbd3ec0ad2a0"
+          }
+        },
+        {
+          "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "282805273447-03nc73mpp49f0j4i8b8tmgrqeah90chn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pietycustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282805273447:android:f8c2b97fb9270e00",
+        "android_client_info": {
+          "package_name": "com.piety.pietystore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282805273447-efb4fp92mnvtpcvv83c0vqjl91mt4jlp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.pietystore",
+            "certificate_hash": "25ed8aab342338f21d436b9ef65ebbd3ec0ad2a0"
+          }
+        },
+        {
+          "client_id": "282805273447-jkjtkhkcelescnn866ta64p975j22sgs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.pietystore",
+            "certificate_hash": "d9dc9d1a6005559a9d800c7b8e91840f75624241"
+          }
+        },
+        {
+          "client_id": "282805273447-kt24rvc4pkdtqepqaa0be3a0vj4hrtkj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.pietystore",
+            "certificate_hash": "deab1315cf4b494f933c27588103599b2eff38a1"
+          }
+        },
+        {
+          "client_id": "282805273447-mdolgnff8qr91h6elf7bj6ur3nbs6ulm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.pietystore",
+            "certificate_hash": "c3a2e44219aa3cf6a4c86ea4936864cc51d0348e"
+          }
+        },
+        {
+          "client_id": "282805273447-rc0ijbd0t74j9djgb978q7n6sgsc9qnt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piety.pietystore",
+            "certificate_hash": "5a00d73fcd9a2d9cf05adf595d40ecef1a5b4bcd"
+          }
+        },
+        {
+          "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282805273447-7uj3k2oj2b7minld73lj04cbsamf7cg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "282805273447-03nc73mpp49f0j4i8b8tmgrqeah90chn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pietycustomer"
+              }
             }
           ]
         }

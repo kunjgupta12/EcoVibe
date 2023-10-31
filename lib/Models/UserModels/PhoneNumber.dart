@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 
 class PhoneNumber {
   String? countryCode;
-  String? number;
+  late String number;
 
   PhoneNumber({
     this.countryCode,

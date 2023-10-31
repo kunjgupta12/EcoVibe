@@ -6,8 +6,8 @@ import '../../../Models/Other/StringToEnum.dart';
 
 class Payment {
   PaymentStatus? paymentStatus;
-  PaymentMode? paymentMode;
-  double? amount;
+  late PaymentMode paymentMode;
+  late double amount;
 
   Payment({
     required this.paymentStatus,

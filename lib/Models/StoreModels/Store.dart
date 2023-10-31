@@ -9,8 +9,8 @@ import '../../../Models/StoreModels/Offer.dart';
 import '../../../Models/UserModels/PhoneNumber.dart';
 
 class Store {
-  String? name;
-  String? uid;
+  late String name;
+  late String uid;
   Map<String, String>? fcmTokens;
   String? owner;
   double? rating;
@@ -18,7 +18,7 @@ class Store {
   bool? isActive;
   bool? isOpen;
   StoreAddress? address;
-  int? pincode;
+  late int pincode;
   int? reviewCount;
   List<Offer>? offers;
   StoreTime? openingHour;
@@ -62,7 +62,7 @@ class Store {
     this.isActive,
     this.isOpen,
     this.address,
-    this.pincode,
+    required this.pincode,
     this.offers,
     this.openingHour,
     this.closingHour,

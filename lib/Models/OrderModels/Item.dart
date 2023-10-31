@@ -3,8 +3,8 @@ import 'package:flutter/foundation.dart';
 class Item {
   // String itemID;
   String? serviceAvailed;
-  double? price;
-  int? itemCount;
+  late double price;
+  late int itemCount;
 
   Item({
     // @required this.itemID,

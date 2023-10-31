@@ -19,11 +19,11 @@ import 'chats.dart';
 
 class Order {
   /// Order related states
-  String? orderId;
-  Price? price;
-  DateTime? orderPlacingDate;
+  late String orderId;
+  late Price price;
+  late DateTime orderPlacingDate;
   OrderStatus? orderStatus;
-  List<Payment>? payments;
+  late List<Payment> payments;
   DeliveryType? deliveryType;
   DateTime? pickupDateTimeRequested;
   DateTime? estimatedDeliveryDateTime;
@@ -64,11 +64,11 @@ class Order {
   double? distance;
 
   Order({
-    this.orderId,
-    this.price,
+    required this.orderId,
+    required this.price,
     required this.orderPlacingDate,
     required this.orderStatus,
-    this.payments,
+    required this.payments,
     this.deliveryType,
     this.pickupDateTimeRequested,
     this.estimatedDeliveryDateTime,

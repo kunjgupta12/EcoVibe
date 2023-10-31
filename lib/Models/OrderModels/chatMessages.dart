@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 
 class ChatMessage {
-  DateTime? dateTime;
-  String? message;
+  late DateTime dateTime;
+  late String message;
   bool? isStore;
   bool? isself;
 

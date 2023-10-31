@@ -2,8 +2,8 @@ import 'package:flutter/foundation.dart';
 
 class Review {
   String? message;
-  DateTime? dateTime;
-  int? rating;
+  late DateTime dateTime;
+  late int rating;
 
   Review({
     this.message,

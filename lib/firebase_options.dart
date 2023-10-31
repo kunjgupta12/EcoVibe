@@ -44,38 +44,43 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBWHwVcNXGXpk8uMMcJ1A2gGr0ADWU2Rdg',
-    appId: '1:1013750871131:web:52a1e965db76c1bf07bb7e',
-    messagingSenderId: '1013750871131',
-    projectId: 'serenity-a621b',
-    authDomain: 'serenity-a621b.firebaseapp.com',
-    storageBucket: 'serenity-a621b.appspot.com',
-    measurementId: 'G-HYQHZX4CTJ',
+    apiKey: 'AIzaSyBKI191Af805JYym_vbEA6g7eJqlhj2quM',
+    appId: '1:282805273447:web:6e2bf5c4de98957b15e5c2',
+    messagingSenderId: '282805273447',
+    projectId: 'mypiety-9a56c',
+    authDomain: 'mypiety-9a56c.firebaseapp.com',
+    databaseURL: 'https://mypiety-9a56c.firebaseio.com',
+    storageBucket: 'mypiety-9a56c.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDXAgtwWLfErJgdJv-g10Ew3i-kuCAOOA0',
-    appId: '1:1013750871131:android:eec16d80fde1928007bb7e',
-    messagingSenderId: '1013750871131',
-    projectId: 'serenity-a621b',
-    storageBucket: 'serenity-a621b.appspot.com',
+    apiKey: 'AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k',
+    appId: '1:282805273447:android:aa26b419c63628fb15e5c2',
+    messagingSenderId: '282805273447',
+    projectId: 'mypiety-9a56c',
+    databaseURL: 'https://mypiety-9a56c.firebaseio.com',
+    storageBucket: 'mypiety-9a56c.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCgBlybOXq7IEVdqKYhKtLa26tcWpZUrJQ',
-    appId: '1:1013750871131:ios:03a3b805b8fc195c07bb7e',
-    messagingSenderId: '1013750871131',
-    projectId: 'serenity-a621b',
-    storageBucket: 'serenity-a621b.appspot.com',
+    apiKey: 'AIzaSyDOlA1JtZgLI4hm7-KL27SdofmL6fLEm5Y',
+    appId: '1:282805273447:ios:c3235b69ccef6e4515e5c2',
+    messagingSenderId: '282805273447',
+    projectId: 'mypiety-9a56c',
+    databaseURL: 'https://mypiety-9a56c.firebaseio.com',
+    storageBucket: 'mypiety-9a56c.appspot.com',
+    androidClientId: '282805273447-03ijur9nirat8ikmchcqfsjqkrv6inkm.apps.googleusercontent.com',
     iosBundleId: 'com.example.pietyservices',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCgBlybOXq7IEVdqKYhKtLa26tcWpZUrJQ',
-    appId: '1:1013750871131:ios:03a3b805b8fc195c07bb7e',
-    messagingSenderId: '1013750871131',
-    projectId: 'serenity-a621b',
-    storageBucket: 'serenity-a621b.appspot.com',
+    apiKey: 'AIzaSyDOlA1JtZgLI4hm7-KL27SdofmL6fLEm5Y',
+    appId: '1:282805273447:ios:c3235b69ccef6e4515e5c2',
+    messagingSenderId: '282805273447',
+    projectId: 'mypiety-9a56c',
+    databaseURL: 'https://mypiety-9a56c.firebaseio.com',
+    storageBucket: 'mypiety-9a56c.appspot.com',
+    androidClientId: '282805273447-03ijur9nirat8ikmchcqfsjqkrv6inkm.apps.googleusercontent.com',
     iosBundleId: 'com.example.pietyservices',
   );
 }

@@ -3,7 +3,7 @@ import 'package:pietyservices/Models/OrderModels/chatMessages.dart';
 class Chats {
   bool? didStoreRead;
   bool? didCustomerRead;
-  List<ChatMessage>? chatMessages;
+  late List<ChatMessage> chatMessages;
 
   Chats({
     required this.chatMessages,

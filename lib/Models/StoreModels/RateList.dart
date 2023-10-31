@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 class RateList {
   String? rateListType;
-  String? storeId;
+  late String storeId;
   List<RateListItem>? rateListItem;
   List<String>? categoryList;
   Map<String, dynamic>? _cumulativeRateList;
@@ -12,7 +12,7 @@ class RateList {
   }
 
   RateList({
-    this.storeId,
+    required this.storeId,
     required this.categoryList,
     required this.rateListItem,
     required this.rateListType,
