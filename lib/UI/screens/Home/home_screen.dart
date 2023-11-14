@@ -1,83 +1,100 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pietyservices/Bloc/Auth/Auth_bloc.dart';
-import 'package:pietyservices/UI/screens/Home/image_corsoel.dart';
-import 'package:pietyservices/UI/screens/Home/list_services.dart';
-import 'package:pietyservices/UI/screens/Home/services.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
+import 'package:geocoding/geocoding.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:pietyservices/UI/screens/Home/storeType.dart';
+import 'package:flutter/cupertino.dart';
+import '../../../Bloc/User/UserBloc.dart';
 
-import '../../../Bloc/Auth/Auth_state.dart';
-import '../Login/signing_screen.dart';
+Future<Position> _getGeoLocationPosition() async {
+  bool serviceEnabled;
+  LocationPermission permission;
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  // Test if location services are enabled.
+  serviceEnabled = await Geolocator.isLocationServiceEnabled();
+  if (!serviceEnabled) {
+    // Location services are not enabled don't continue
+    // accessing the position and request users of the
+    // App to enable the location services.
+    // await Geolocator.requestPermission();
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
+    await Geolocator.openLocationSettings();
+    return Future.error('Location services are disabled.');
+  }
+
+  permission = await Geolocator.checkPermission();
+  if (permission == LocationPermission.denied) {
+    permission = await Geolocator.requestPermission();
+    if (permission == LocationPermission.denied) {
+      // Permissions are denied, next time you could try
+      // requesting permissions again (this is also where
+      // Android's shouldShowRequestPermissionRationale
+      // returned true. According to Android guidelines
+      // your App should show an explanatory UI now.
+      return Future.error('Location permissions are denied');
+    }
+  }
+
+  if (permission == LocationPermission.deniedForever) {
+    // Permissions are denied forever, handle appropriately.
+    return Future.error(
+        'Location permissions are permanently denied, we cannot request permissions.');
+  }
+
+  // When we reach here, permissions are granted and we can
+  // continue accessing the position of the device.
+  return await Geolocator.getCurrentPosition(
+      desiredAccuracy: LocationAccuracy.high);
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+Future<void> GetAddressFromLatLong(Position position) async {
+  List<Placemark> placemarks =
+      await placemarkFromCoordinates(position.latitude, position.longitude);
+  print(placemarks);
+  Placemark place = placemarks[0];
+  Address =
+      '${place.street}, ${place.subLocality}, ${place.locality}, ${place.postalCode}, ${place.country}';
+}
+
+String location = '';
+String Address = 'null';
+
+Future<void> get() async {
+  Position position = await _getGeoLocationPosition();
+  location = 'Lat: ${position.latitude} , Long: ${position.longitude}';
+  GetAddressFromLatLong(position);
+}
+
+class HomeScreen extends StatelessWidget {
+  HomeScreen({Key? key}) : super(key: key);
+  DocumentReference doc =
+      FirebaseFirestore.instance.collection('admin_panel').doc('data');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(150),
+        preferredSize: Size(200, 100),
         child: AppBar(
-          backgroundColor: Colors.green,
-          shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(8)),
-          centerTitle: true,
-          title: Text("Hello"),
-        ),
-      ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                height: 40,
-              ),
-              Text('Top Deals'),
-              SizedBox(
-                height: 10,
-              ),
-              ImageCarousel(),
-              SizedBox(
-                height: 40,
-              ),
-              Text(
-                'Top Services',
-                style: TextStyle(fontSize: 20),
-              ),
-              listServices(),
-              Center(
-                child: BlocConsumer<AuthBloc, AuthState>(
-                  listener: (context, state) {
-                    if (state is AuthLoggedOutState) {
-                      Navigator.popUntil(context, (route) => route.isFirst);
-                      Navigator.pushReplacement(
-                          context,
-                          CupertinoPageRoute(
-                              builder: (context) => SignInScreen()));
-                    }
-                  },
-                  builder: (context, state) {
-                    return CupertinoButton(
-                      onPressed: () {
-                        BlocProvider.of<AuthBloc>(context).logOut();
-                      },
-                      child: Text("Log Out"),
-                    );
-                  },
+          title: SizedBox(
+            height: 69,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  height: 20,
                 ),
-              ),
-            ],
+                Text(location),
+                Text(Address)
+              ],
+            ),
           ),
         ),
       ),
+      body: storeType(documentReference: doc),
     );
   }
 }
+
+final db = FirebaseFirestore.instance;

@@ -141,14 +141,14 @@ class _SignInScreenState extends State<SignInScreen> {
                                     },
                                     builder: (context, state) {
                                       if (state is AuthLoadingState) {
-                                        return Center(
+                                        return const Center(
                                           child: CircularProgressIndicator(),
                                         );
                                       }
 
                                       return CircleAvatar(
                                         child: IconButton(
-                                          icon: Icon(
+                                          icon:const Icon(
                                             Icons.keyboard_arrow_right,
                                             color: Colors.white,
                                           ),

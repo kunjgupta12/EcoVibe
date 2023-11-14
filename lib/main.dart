@@ -5,12 +5,16 @@ import 'package:pietyservices/Bloc/Auth/Auth_bloc.dart';
 import 'package:pietyservices/Bloc/Auth/Auth_state.dart';
 import 'package:pietyservices/UI/screens/nav_bar.dart';
 
+import 'Bloc/AdminBloc.dart';
 import 'UI/screens/Login/signing_screen.dart';
 import 'UI/screens/Home/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  get();
+  //howDisplayName(specificField);
+//  fetchMetaData();
   runApp(MyApp());
 }
 

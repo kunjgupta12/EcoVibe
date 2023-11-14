@@ -1,7 +1,26 @@
-import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:firebase_storage/firebase_storage.dart';
-import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
+
+Future<List<String>> getImageUrlsFromFirestore() async {
+  final CollectionReference imagesCollection = FirebaseFirestore.instance
+      .collection('admin_panel'); // Replace with your collection name
+
+  DocumentSnapshot documentSnapshot = await imagesCollection
+      .doc('data')
+      .get(); // Replace with the specific document ID
+
+  if (documentSnapshot.exists) {
+    List<dynamic> dynamicImageUrls = documentSnapshot['dashboardImage'];
+    List<String> imageUrls = dynamicImageUrls
+        .map((url) => url.toString())
+        .toList(); // Replace with your field name
+    return imageUrls;
+  } else {
+    return [];
+  }
+}
 
 class ImageCarousel extends StatefulWidget {
   @override
@@ -9,41 +28,31 @@ class ImageCarousel extends StatefulWidget {
 }
 
 class _ImageCarouselState extends State<ImageCarousel> {
-  final FirebaseStorage _storage = FirebaseStorage.instance;
   List<String> imageUrls = [];
 
   @override
   void initState() {
     super.initState();
-    // Replace 'images' with the path to your Firebase Storage images
-    fetchImageUrls('images');
-  }
-
-  Future<void> fetchImageUrls(String folder) async {
-    final ListResult result = await _storage.ref(folder).listAll();
-    imageUrls = await Future.wait(
-        result.items.map((Reference ref) => ref.getDownloadURL()));
-  
+    getImageUrlsFromFirestore().then((urls) {
+      setState(() {
+        imageUrls = urls;
+      });
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return CarouselSlider(
+      items: imageUrls.map((url) {
+        return Container(
+          child: Image.network(url),
+        );
+      }).toList(),
       options: CarouselOptions(
-        onScrolled: (value) {},
-        viewportFraction: 1,
-        height: 200,
         autoPlay: true,
         aspectRatio: 16 / 9,
         enlargeCenterPage: true,
       ),
-      items: imageUrls.map((url) {
-        return CachedNetworkImage(
-          imageUrl: url,
-          placeholder: (context, url) => CircularProgressIndicator(),
-          errorWidget: (context, url, error) => Icon(Icons.error),
-        );
-      }).toList(),
     );
   }
 }

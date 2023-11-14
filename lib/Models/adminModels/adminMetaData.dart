@@ -117,29 +117,6 @@ class AdminMetaData {
         (snapshot.data()!["fixedSubscriptionCommission"] ?? 80).toDouble();
     // print("Admin data: ${this.toJson()}");
   }
-
-  // Map<String, dynamic> toJson() {
-  //   return {
-  //     "T&C": this.tc,
-  //     "legalAgreement": this.agreement,
-  //     "iOSAppUrl": this.iOSAppUrl,
-  //     "androidAppUrl": this.androidAppUrl,
-  //     "discountOnOrderOnly": this.discountOnOrderOnly,
-  //     "commissionPercent": this.commissionPercent,
-  //     "razorAPIKey": this.razorAPIKey,
-  //     "rateListCategory": this.rateListCategory,
-  //     "reward": this.reward.toJson(),
-  //     "featureOffer":
-  //         List<dynamic>.from(this.featureOffer.map((e) => e.toJson())),
-  //     "FAQ": List<dynamic>.from(this.faq.map((o) => o.toJson())),
-  //     "socialLinks": List<dynamic>.from(this.social.map((o) => o.toJson())),
-  //     "superUser": List<String>.from(this.superUser),
-  //     "user": List<String>.from(this.user),
-  //     "customerCare": this.customerCare,
-  //     "storeTypes": List<dynamic>.from(this.storeTypes.map((e) => e.toJson())),
-  //     // "storeCategories": List<String>.from(this.storeCategories),
-  //   };
-  // }
 }
 
 class StoreType {
