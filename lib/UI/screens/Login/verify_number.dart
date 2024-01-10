@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pietyservices/Assets/app_colors.dart';
 import 'package:pietyservices/Bloc/Auth/Auth_bloc.dart';
 import 'package:pietyservices/UI/screens/nav_bar.dart';
 
@@ -17,7 +18,7 @@ class VerifyPhoneNumberScreen extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              color: Color(0xFF366695),
+              color: bg,
               height: MediaQuery.of(context).size.height * 0.7,
               child: Padding(
                 padding: const EdgeInsets.all(40.0),
@@ -29,7 +30,7 @@ class VerifyPhoneNumberScreen extends StatelessWidget {
                     Center(
                       child: Image(
                         fit: BoxFit.contain,
-                        image: AssetImage('assets/Images/machine.png'),
+                        image: AssetImage('assets/Images/onboarding2.png'),
                       ),
                     ),
                   ],
@@ -85,7 +86,7 @@ class VerifyPhoneNumberScreen extends StatelessWidget {
                             BlocProvider.of<AuthBloc>(context)
                                 .verifyOTP(otpController.text);
                           },
-                          color: Colors.blue,
+                          color: primaryColor,
                           child: Text("Verify"),
                         ),
                       );

@@ -44,43 +44,42 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBKI191Af805JYym_vbEA6g7eJqlhj2quM',
-    appId: '1:282805273447:web:6e2bf5c4de98957b15e5c2',
-    messagingSenderId: '282805273447',
-    projectId: 'mypiety-9a56c',
-    authDomain: 'mypiety-9a56c.firebaseapp.com',
-    databaseURL: 'https://mypiety-9a56c.firebaseio.com',
-    storageBucket: 'mypiety-9a56c.appspot.com',
+    apiKey: 'AIzaSyDH9JCBjGIIyj1EBJrq8HJq2NdxORzmKjI',
+    appId: '1:585491402759:web:7cdbfa9c26c1eb1c0cdaa2',
+    messagingSenderId: '585491402759',
+    projectId: 'propp-400e1',
+    authDomain: 'propp-400e1.firebaseapp.com',
+    databaseURL: 'https://propp-400e1-default-rtdb.firebaseio.com',
+    storageBucket: 'propp-400e1.appspot.com',
+    measurementId: 'G-T12NMWR863',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAgcoyaaHRePItHBPkMkDi15P8-qLdki8k',
-    appId: '1:282805273447:android:aa26b419c63628fb15e5c2',
-    messagingSenderId: '282805273447',
-    projectId: 'mypiety-9a56c',
-    databaseURL: 'https://mypiety-9a56c.firebaseio.com',
-    storageBucket: 'mypiety-9a56c.appspot.com',
+    apiKey: 'AIzaSyA3GwUl1lyE_0-f8EaI71VX3KbfFaK1Q54',
+    appId: '1:585491402759:android:d2b9672727147f550cdaa2',
+    messagingSenderId: '585491402759',
+    projectId: 'propp-400e1',
+    databaseURL: 'https://propp-400e1-default-rtdb.firebaseio.com',
+    storageBucket: 'propp-400e1.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDOlA1JtZgLI4hm7-KL27SdofmL6fLEm5Y',
-    appId: '1:282805273447:ios:c3235b69ccef6e4515e5c2',
-    messagingSenderId: '282805273447',
-    projectId: 'mypiety-9a56c',
-    databaseURL: 'https://mypiety-9a56c.firebaseio.com',
-    storageBucket: 'mypiety-9a56c.appspot.com',
-    androidClientId: '282805273447-03ijur9nirat8ikmchcqfsjqkrv6inkm.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCH8zTiJI7R1jwCo6G_zt_V4x8NrRIWiFk',
+    appId: '1:585491402759:ios:2f049869ad5212f00cdaa2',
+    messagingSenderId: '585491402759',
+    projectId: 'propp-400e1',
+    databaseURL: 'https://propp-400e1-default-rtdb.firebaseio.com',
+    storageBucket: 'propp-400e1.appspot.com',
     iosBundleId: 'com.example.pietyservices',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDOlA1JtZgLI4hm7-KL27SdofmL6fLEm5Y',
-    appId: '1:282805273447:ios:c3235b69ccef6e4515e5c2',
-    messagingSenderId: '282805273447',
-    projectId: 'mypiety-9a56c',
-    databaseURL: 'https://mypiety-9a56c.firebaseio.com',
-    storageBucket: 'mypiety-9a56c.appspot.com',
-    androidClientId: '282805273447-03ijur9nirat8ikmchcqfsjqkrv6inkm.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCH8zTiJI7R1jwCo6G_zt_V4x8NrRIWiFk',
+    appId: '1:585491402759:ios:2f049869ad5212f00cdaa2',
+    messagingSenderId: '585491402759',
+    projectId: 'propp-400e1',
+    databaseURL: 'https://propp-400e1-default-rtdb.firebaseio.com',
+    storageBucket: 'propp-400e1.appspot.com',
     iosBundleId: 'com.example.pietyservices',
   );
 }

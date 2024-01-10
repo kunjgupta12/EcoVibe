@@ -44,14 +44,21 @@ class _ImageCarouselState extends State<ImageCarousel> {
   Widget build(BuildContext context) {
     return CarouselSlider(
       items: imageUrls.map((url) {
-        return Container(
-          child: Image.network(url),
+        return Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SizedBox(
+            width: 700,
+            height: 200,
+            child: Image.network(url),
+          ),
         );
       }).toList(),
       options: CarouselOptions(
+        //  height: 200,
+        autoPlayInterval: Duration(seconds: 5),
         autoPlay: true,
         aspectRatio: 16 / 9,
-        enlargeCenterPage: true,
+        //  enlargeCenterPage: true,
       ),
     );
   }

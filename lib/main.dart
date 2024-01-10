@@ -1,20 +1,26 @@
+import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get/get.dart';
 import 'package:pietyservices/Bloc/Auth/Auth_bloc.dart';
 import 'package:pietyservices/Bloc/Auth/Auth_state.dart';
 import 'package:pietyservices/UI/screens/nav_bar.dart';
-
-import 'Bloc/AdminBloc.dart';
+import 'package:pietyservices/UI/screens/Login/splash.dart';
 import 'UI/screens/Login/signing_screen.dart';
 import 'UI/screens/Home/home_screen.dart';
+import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    name: 'pietyservices',
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   get();
-  //howDisplayName(specificField);
-//  fetchMetaData();
+  await FirebaseAppCheck.instance
+      .activate(androidProvider: AndroidProvider.playIntegrity);
   runApp(MyApp());
 }
 
@@ -26,7 +32,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => AuthBloc(),
-      child: MaterialApp(
+      child: GetMaterialApp(
+        theme: ThemeData(fontFamily: 'OpenSans'),
         debugShowCheckedModeBanner: false,
         home: BlocBuilder<AuthBloc, AuthState>(
           buildWhen: (oldState, newState) {
@@ -34,9 +41,9 @@ class MyApp extends StatelessWidget {
           },
           builder: (context, state) {
             if (state is AuthLoggedInState) {
-              return Navpage();
+              return SplashScreen();
             } else if (state is AuthLoggedOutState) {
-              return SignInScreen();
+              return SplashScreen();
             } else {
               return Scaffold();
             }
